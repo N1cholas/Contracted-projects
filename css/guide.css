@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: "微软雅黑";
+}
+
+ul {
+    list-style: none;
+}
+
+#guide-masking {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.centerAll {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+}
+
+#guide-logo {
+    z-index: 101
+}
+
+#guide-btn {
+    top: 480px;
+    z-index: 102;
+    width: 320px;
+    height: 45px;
+}
+
+#guide-btn button {
+    width: 140px;
+    border-radius: 25px;
+    font-size: 24px;
+    line-height: 45px;
+    text-align: center;
+    outline: none;
+    border: none;
+    padding: 0 25px;
+    border: 1px solid #fff;
+    background: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+}
+
+#guide-btn .red {
+    float: right;
+    background: #fa0318;
+}

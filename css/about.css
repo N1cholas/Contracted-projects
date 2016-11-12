@@ -1,0 +1,45 @@
+.about-title {
+	height: 60px;
+	margin: 54px 0 24px;
+}
+
+.about-title div {
+	width: 335px;
+	height: 100%;
+	float: right;
+	background: #fa0318;
+	font-size: 25px;
+	color: #fff;
+	line-height: 60px;
+	padding: 0 0 0 38px;
+}
+
+.about-content {
+	width: 946px;
+	background: #000;
+	margin: 0 auto 20px;
+}
+
+.about-content-part {
+	height: 215px;
+	color: #fff;
+}
+
+.about-content-part img {
+	width: 304px;
+	height: 211px;
+	float: left;
+	margin: -24px 0 0 -60px;
+	/*border: none;*/
+	padding: 10px;
+	background: url("../imgs/about-us-left.png") no-repeat;
+}
+
+.about-content-part p {
+	padding: 27px 27px 27px 277px;
+	height: 100%;
+}
+
+.about-content-part img.about-img {
+	background: url("../imgs/about-us-right.png") no-repeat;
+}

@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:active,a:visited {
+	color: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: "微软雅黑";
+}
+
+ul {
+    list-style: none;
+}
+
+.home-slide-btn {
+	position: absolute;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	top: 265px;
+	z-index: 200;
+	opacity: .5;
+	/*left: 50px;*/
+}
+
+.home-slide-detail {
+	width: 480px;
+	height: 170px;
+	position: absolute;
+	background: rgba(40,156,255,.5);
+	right: 80px;
+	bottom: -20px;
+	padding: 30px 40px;
+	color: #fff;
+	text-align: justify;
+	z-index: 200;
+}
+
+.home-product {
+	width: 100%;
+	height: 520px;
+	margin: 40px 0;
+	/*background: pink;*/
+}
+
+.home-explicit-product,.home-implicit-product {
+	width: 50%;
+	height: 50%;
+	color: #191919;
+	display: inline-block;
+	background: #fff;
+}
+
+.home-implicit-product {
+	position: relative;
+	overflow: hidden;
+}
+
+.home-explicit-product a,.home-implicit-product a {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+}
+
+.home-explicit-product img,.home-implicit-product img {
+	width: 100%;
+	height: 100%;
+	display: inline;
+	transition: all ease-in .5s
+}
+
+.home-explicit-product h2,.home-implicit-product h2 {
+	border-bottom: 1px solid #191919;
+	padding: 15px 0;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto 15px;
+}
+
+.home-explicit-product div,.home-implicit-product div {
+	height: 100%;
+	display: inline-block;
+	text-align: justify;
+	font-size: 15px;
+	box-sizing: border-box;
+	padding: 34px 70px;
+	position: relative;
+}
+
+.home-implicit-product a.home-implicit-product-detail {
+	position: absolute;
+	left: 0;
+	bottom: -260px;
+	background: rgba(0,0,0,.3);
+	transition: all ease-in .5s
+}
+
+.home-explicit-product div:before {
+	content: '';
+	position: absolute;
+	top: 118px;
+	right: -25px;
+	width: 0px;
+	height:0px;
+	border-width: 10px 10px 10px 15px;
+	border-style: solid;
+	border-color: transparent transparent transparent #fff;
+}
+
+.home-explicit-product:last-of-type div:before {
+	left: -25px;
+	border-width: 10px 15px 10px 10px;
+	border-color: transparent #fff transparent transparent;
+}
+
+.ie8-left-arrow div:before {
+	left: -24px!important;
+	border-width: 10px 15px 10px 10px;
+	border-color: transparent #fff transparent transparent;
+}
+
+.home-footer {
+	width: 100%;
+	height: 204px;
+	background: #000;
+	box-sizing: border-box;
+	padding: 65px 150px 0;
+}
+
+.home-footer p {
+	width: 25%;
+	height: 100%;
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	text-align: center;
+}
+
+.home-footer p i {
+	display: block;
+	margin: 0 auto 16px;
+}
+/*阿里矢量图*/
+@font-face {font-family: 'iconfont';
+    src: url('iconfont/iconfont.eot'); /* IE9*/
+    src: url('iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:35px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+/*轮播图css*/
+#slides {
+  position: relative;
+}
+#slides .slides-container {
+  display: none;
+}
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+}
+.slides-navigation a {
+  position: absolute;
+  display: block;
+}
+.slides-navigation a.prev {
+  left: 0;
+}
+.slides-navigation a.next {
+  right: 0;
+}
+
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 220px;
+}
+.slides-pagination a {
+  border: 2px solid #fff;
+  border-radius: 15px;
+  width: 15px;
+  height: 15px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin: 22px 7px;
+  overflow: hidden;
+  text-indent: -100%;
+}
+.slides-pagination a.current {
+  background: #fff;
+}

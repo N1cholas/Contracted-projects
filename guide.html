@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>guide</title>
+	<link rel="stylesheet" href="css/guide.css">
+	<link rel="stylesheet" href="css/public/superslides.css">
+</head>
+<body>
+	<!-- 蒙板 -->
+	<div id="guide-masking"></div>
+	<!-- logo -->
+	<img id="guide-logo" class="centerAll" src="imgs/guide_03.png" alt="logo">
+	<!-- 按钮 -->
+	<div id="guide-btn" class="centerAll">
+		<button>中文版</button>
+		<button class="red">English</button>
+	</div>
+	<!-- 轮播图 -->
+	<div id="slides">
+	  <div class="slides-container">
+	    <a href="#"><img src="imgs/test/affinity.jpeg" alt="Cinelli"></a>
+	    <a href="#"><img src="imgs/test/cinelli-front.jpeg" width="1024" height="682" alt="Surly"></a>
+	    <a href="#"><img src="imgs/test/people.jpeg" width="1024" height="683" alt="Cinelli"></a>
+	    <!-- <img src="imgs/test/surly.jpeg" width="1024" height="685" alt="Affinity"> -->
+	  </div>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.superslides.min.js"></script>
+	<script>
+	  $('#slides').superslides({
+	    animation: 'fade'
+	    // ,
+	    // inherit_height_from: $('#guide-logo')
+	  });
+	  var marginTop = parseInt($('#guide-logo').css('marginTop')) + 120
+	  $('.slides-pagination').css({"margin-top": marginTop})
+	  var btn = $('.slides-pagination > a')
+	  var i = 0
+	  setInterval(function () {
+	  	btn[i].click()
+	  	i++
+	  	if (i === 3) {
+	  		i=0
+	  	}
+	  },3000)
+	  // console.log(btn)
+	</script>
+</body>
+</html>

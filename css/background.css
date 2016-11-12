@@ -1,0 +1,517 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:active,a:visited {
+	color: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: "微软雅黑";
+    padding: 0 0 0 250px;
+    background: #eeeeee;
+}
+
+ul {
+    list-style: none;
+}
+
+.background-sidebar {
+    width: 250px;
+    height: 100%;
+    background: #283643;
+    position: fixed;
+    top: 0; left: 0;
+}
+
+.background-sidebar img {
+    width: 98px;
+    height: 98px;
+    display: block;
+    margin: 80px auto 0;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.background-sidebar p {
+    text-align: center;
+    color: #fff;
+    margin: 12px 0 24px;
+    position: relative;
+}
+
+.background-sidebar p:before {
+    content: '';
+    position: absolute;
+    top: 3px; left: 50px;
+    width: 15px;
+    height: 15px;
+    background: pink;
+    border-radius: 50%;
+    background: #5cb85c;
+}
+
+.background-sidebar a {
+    display: block;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+
+.background-sidebar a:hover {
+    background: #1cc09f;
+}
+
+.background-sidebar a.active {
+    background: #1cc09f;
+}
+
+.background-topbar {
+    width: 100%;
+    height: 60px;
+    background: #111111;
+}
+
+.background-login-out {
+    width: 120px;
+    height: 100%;
+    color: #fff;
+    text-align: right;
+    line-height: 60px;
+    font-size: 20px;
+    background: url("../imgs/exit.png") no-repeat left center;
+    float: right;
+    margin: 0 36px 0 0;
+    cursor: pointer;
+}
+
+.background-delete-product-masking,.background-revise-product-masking {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    z-index: 100;
+    background: rgba(0,0,0,.3);
+}
+
+.background-delete-product-masking div {
+    width: 334px;
+    height: 250px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    border-radius: 5px;
+    background: #fff;
+    padding: 0 69px;
+}
+
+.background-delete-product-masking div img {
+    display: block;
+    margin: 40px auto 35px;
+}
+
+.background-revise-product {
+    width: 860px;
+    height: 600px;
+    padding: 60px 55px 42px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    background: #eeeeee;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.background-revise-left-section,.background-revise-right-section,.background-publish-left-section,.background-publish-right-section {
+    width: 280px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.background-revise-product-normal-style input,.background-revise-product-normal-style select,.background-revise-product-normal-style textarea {
+    outline: none;
+    border-radius: 5px;
+    width: 180px;
+    height: 42px;
+    margin: 0 0 0 13px;
+    padding: 0 10px;
+    font-size: 18px;
+    border: none;
+    border: 1px solid #c6c6c6;
+}
+
+.background-revise-product-normal-style textarea {
+    margin: 0 0 0 7px;
+    height: 156px;
+    vertical-align: top;
+    resize : none;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "微软雅黑"
+}
+
+.background-revise-product-update-photo,.background-team-product-update-photo,.background-publish-product-update-photo,.background-publish-update-photos {
+    width: 206px;
+    height: 120px;
+    display: inline-block;
+    position: relative;
+}
+
+.background-revise-product-update-masking,.background-team-product-update-masking,.background-publish-product-update-masking,.background-publish-update-masking {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+}
+
+.background-revise-product-update-masking button,.background-team-product-update-masking button,.background-publish-product-update-masking button,.background-publish-update-masking button {
+    outline: none;
+    border: none;
+    width: 94px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background: #1cc09f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.background-management {
+    /*background: #eeeeee;*/
+    min-height: 880px;
+}
+
+.background-change-language {
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    background: #1cc09f;
+    font-size: 18px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    float: right;
+    margin: 15px 30px;
+    cursor: pointer;
+}
+
+.background-management-products-topbar {
+    display: block;
+    padding: 0 0 20px 0;
+}
+
+.background-management-products-topbar li,.background-management-products-details p {
+    display: inline-block;
+    font-size: 18px;
+    color: #000;
+    width: 138px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.background-management-products-details p {
+    height: 100%;
+    line-height: 90px;
+    background: #fff;
+    font-size: 17px;
+}
+
+.background-management-products-details p img {
+    width: 90%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+}
+
+.background-management-products-details button,.background-delete-product-masking div button,.background-section-cancle,.background-section-confirm,.background-classify-items button {
+    width: 70px;
+    height: 50px;
+    border-radius: 5px;
+    background: #7cbef6;
+    line-height: 50px;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.background-section-cancle,.background-section-confirm {
+    position: absolute;
+    bottom: 0;
+}
+
+.background-management-items {
+    width: 1028px;
+    height: 720px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+}
+
+.background-contact {
+    width: 800px;
+    height: 655px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    /*background: #fff;*/
+}
+
+.background-contact-items {
+    font-size: 18px;
+    padding: 20px;
+    border-left: 5px solid #1cc09f;
+    border-bottom: 1px solid #dedede;
+    background: #fff;
+}
+
+.background-contact-items p {
+    display: inline-block;
+}
+
+.background-contact-items input {
+    width: 600px;
+    margin: 0 30px;
+    outline: none;
+    border: none;
+    line-height: 24px;
+    font-size: 18px;
+    font-family: "微软雅黑"
+}
+
+.bakcground-team {
+    width: 979px;
+    height: 600px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    /*background: #fff;*/
+}
+
+.bakcground-team textarea {
+    display: block;
+    width: 100%;
+    height: 290px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 20px;
+    overflow: hidden;
+    resize: none;
+    outline: none;
+    font-size: 18px;
+    font-family: "微软雅黑"
+}
+
+.bakcground-publish {
+    width: 1020px;
+    height: 550px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    /*background: #fff;*/
+}
+
+.bakcground-classify {
+    width: 1028px;
+    height: 720px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    /*background: #fff;*/
+}
+
+.public-paging {
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    padding: 10px 15px;
+    background: #1cc09f;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.public-pages {
+    position: absolute;
+    left: 0; right: 0; top: 675px; bottom: 0;
+    margin: auto;
+    width: 700px;
+    height: 44px;
+}
+
+.public-paging-btn {
+    font-size: 18px;
+    font-family: "微软雅黑";
+    padding: 10px 15px;
+    background: #fff;
+    color: #000;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.public-paging-btn.active {
+    background: #1cc09f;
+    color: #fff;
+}
+
+.bakcground-classify-add-btn {
+    font-size: 18px;
+    font-family: "微软雅黑";
+    padding: 10px 15px;
+    background: #fff;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #7cbef6;
+}
+
+.background-classify-items {
+    padding: 0 0 0 30px;
+    background: #fff;
+    width: 820px
+}
+
+.background-classify-detail {
+    display: inline-block;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    font-family: "微软雅黑";
+}
+
+.background-classify-items:nth-child(2n+1) {
+    background: #d6d6d6;
+}
+
+.bakcground-administrator {
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+}
+
+.bakcground-administrator button {
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    background: #7cbef6;
+    color: #fff;
+    display: block;
+    margin: 30px auto;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    border-radius: 5px;
+}
+
+.bakcground-index {
+    height: 1060px;
+}
+
+.background-index-main {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    /*background: #fff;*/
+    width: 1000px;
+    height: 900px;
+}
+
+.background-index-photo {
+    width: 313px;
+    height: 180px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.background-index-slide {
+    width: 100%;
+    height: 340px;
+    border: 1px solid #c6c6c6;
+    margin: 15px 0;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.bakcground-slide {
+    width: 1000px;
+    height: 630px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    /*background: #fff;*/
+}
+
+.background-classify-revise-masking {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,.3);
+}
+
+.background-classify-revise {
+    width: 334px;
+    height: 250px;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px 69px 20px;
+}
+
+.background-classify-revise input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #c6c6c6;
+    padding: 25px 0;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    width: 100%;
+    text-align: center;
+}
+
+.background-classify-revise button {
+    padding: 10px 15px;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    background: #b9b9b9;
+    color: #000;
+    position: absolute;
+    bottom: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

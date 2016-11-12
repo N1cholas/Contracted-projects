@@ -1,0 +1,71 @@
+.contact-title {
+	height: 60px;
+	margin: 54px 0 24px;
+}
+
+.contact-title div {
+	width: 335px;
+	height: 100%;
+	float: left;
+	background: #fa0318;
+	font-size: 25px;
+	color: #fff;
+	line-height: 60px;
+	padding: 0 0 0 38px;
+}
+
+.contact-container {
+	margin: -138px 0 0;
+	padding: 138px 0 0;
+	position: relative;
+	height: 859px;
+}
+
+.contact-container img {
+	height: 100%;
+	position: absolute;
+	top: 0; right: 0;
+	z-index: -1;
+}
+
+.contact-container p {
+	margin: 40px 0;
+	padding: 0 0 0 145px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.contact-container span {
+	padding: 0 0 0 85px;
+}
+
+.contact-container .contact-p-url-1 {
+	background: url("../imgs/contact/contact_03.png") no-repeat left 100px center;
+}
+.contact-container .contact-p-url-2 {
+	background: url("../imgs/contact/contact_06.png") no-repeat left 100px center;
+}
+.contact-container .contact-p-url-3 {
+	height: 38px;
+	margin: 34px 0;
+	line-height: 38px;
+	background: url("../imgs/contact/contact_08.png") no-repeat left 100px center;
+}
+.contact-container .contact-p-url-4 {
+	background: url("../imgs/contact/contact_10.png") no-repeat left 100px center;
+}
+.contact-container .contact-p-url-5 {
+	background: url("../imgs/contact/contact_12.png") no-repeat left 100px center;
+}
+.contact-container .contact-p-url-6 {
+	background: url("../imgs/contact/contact_14.png") no-repeat left 100px center;
+}
+.contact-container .contact-p-url-7 {
+	background: url("../imgs/contact/contact_16.png") no-repeat left 100px center;
+}
+.contact-container .contact-p-url-8 {
+	background: url("../imgs/contact/contact_16.png") no-repeat left 100px center;
+}
+.contact-container .contact-p-url-9 {
+	background: url("../imgs/contact/contact_18.png") no-repeat left 100px center;
+}

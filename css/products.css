@@ -1,0 +1,159 @@
+.products-classify {
+	box-sizing: border-box;
+	padding: 60px 90px 50px; 
+}
+
+.products-classify button {
+	border-radius: 25px;
+	font-size: 20px;
+	line-height: 45px;
+	text-align: center;
+	outline: none;
+	border: none;
+	padding: 0 25px;
+	border: 1px solid #fff;
+	background: transparent;
+	box-sizing: border-box;
+	color: #000;
+	cursor: pointer;
+}
+
+.products-classify button.active {
+	background: #fa0318;
+	color: #fff;
+}
+
+.products-show-product {
+	width: 100%;
+	/*background: pink;*/
+	box-sizing: border-box;
+	padding: 0 90px;
+}
+
+.home-explicit-product,.home-implicit-product {
+	width: 50%;
+	height: 50%;
+	color: #191919;
+	display: inline-block;
+	background: #fff;
+	margin: 0 10px 10px 0;
+}
+
+.home-implicit-product {
+	position: relative;
+	overflow: hidden;
+}
+
+.home-explicit-product a,.home-implicit-product a {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+}
+
+.home-explicit-product img,.home-implicit-product img {
+	width: 100%;
+	height: 100%;
+	display: inline;
+	transition: all ease-in .5s
+}
+
+.home-explicit-product h2,.home-implicit-product h2 {
+	border-bottom: 1px solid #191919;
+	padding: 15px 0;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto 15px;
+}
+
+.home-explicit-product div,.home-implicit-product div {
+	height: 100%;
+	display: inline-block;
+	text-align: justify;
+	font-size: 15px;
+	box-sizing: border-box;
+	padding: 34px 70px;
+	position: relative;
+}
+
+.home-implicit-product a.home-implicit-product-detail {
+	position: absolute;
+	left: 0;
+	bottom: -260px;
+	background: rgba(0,0,0,.3);
+	transition: all ease-in .5s
+}
+
+.products-masking {
+	position: fixed;
+	z-index: 999;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.3);
+}
+
+.products-detail {
+	width: 800px;
+	height: 500px;
+}
+
+.products-detail-photos,.products-detail-words {
+	width: 450px;
+	height: 100%;
+	background: #fff;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 43px;
+	position: relative;
+}
+
+.products-detail-photos img {
+	width: 76px;
+	height: 76px;
+	display: inline-block;
+	margin: 38px 16px 0 0;
+	cursor: pointer;
+	position: absolute;
+	bottom: 43px; left: 43px;
+}
+
+.products-detail-photos img.show {
+	width: 100%;
+	height: 386px;
+	cursor: default;
+	margin: 0;
+	position: absolute;
+	top: 0; left: 0;
+	padding: 43px;
+}
+
+.products-detail-photos img.active {
+	outline: 3px solid #666666;
+}
+
+.products-detail-words {
+	color: #fff;
+}
+
+.products-detail-words h2 {
+	text-align: center;
+	margin: 24px;
+}
+
+.products-detail-words p {
+	text-align: justify;
+}
+
+.products-detail-close {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: #fa0318;
+	position: absolute;
+	top: -35px; right: -35px;
+	text-align: center;
+	line-height: 70px;
+	font-size: 35px;
+	color: #fff;
+	cursor: pointer;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>homepage</title>
+	<link rel="stylesheet" href="css/homepage.css">
+	<link rel="stylesheet" href="css/public/public-nav.css">
+	<link rel="stylesheet" href="css/public/public-slide.css">
+</head>
+<body>
+	<!-- 导航 a标签注释不可以去掉 -->
+	<div class="public-nav">
+		<a href="#" style="float: left;color: #fa0318">HOME</a><!-- 
+		 --><a href="#" style="float: left">PRODUCTS</a><!-- 
+		 --><img class="centerAll public-logo" src="imgs/proucts_02.png" alt="logo"><!-- 
+		 --><a href="#" style="float: right">CONTACT</a><!-- 
+		 --><a href="#" style="float: right">ABOUT US</a>
+	</div>
+	<!-- 轮播图 -->
+	<div class="public-slide" style="width: 100%;height: 650px;">
+		<div id="slides">
+		  <div class="slides-container">
+		    <a href="#"><img src="imgs/test/affinity.jpeg" alt="Cinelli"></a>
+		    <a href="#"><img src="imgs/test/cinelli-front.jpeg" width="1024" height="682" alt="Surly"></a>
+		    <a href="#"><img src="imgs/test/people.jpeg" width="1024" height="683" alt="Cinelli"></a>
+		    <!-- <img src="imgs/test/surly.jpeg" width="1024" height="685" alt="Affinity"> -->
+		  </div>
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.superslides.min.js"></script>
+
+		<div class="home-slide-detail">
+			<p>
+				<h2 style="margin: 0 0 15px 0">SHAWEISITE</h2>
+				Lorem ipsum dolor sit amet, consectetur adipisicing  elit, sed do eiusmod tempor inc.ipsum dolor sit amet.aonsecteur adipisicing eltl.
+			</p>
+		</div>
+
+		<div class="home-slide-btn" style="left: 50px;">
+			<img src="imgs/prev.png" alt="prev">
+		</div>
+		<div class="home-slide-btn" style="right: 50px;">
+		 	<img src="imgs/next.png" alt="next">
+		</div>
+	</div>
+	<!-- 产品 -->
+	<div class="home-product">
+		<div class="home-explicit-product" style="float: left;">
+			<a style="float: right;" href="#">
+				<img style="float: right;" src="imgs/test/affinity.jpeg" alt="product">
+			</a>
+			<div style="width: 50%;">
+				<h2>SHAWEISITE</h2>
+				Lorem ipsum dolor sit amet, consectetur adipisicing  elit, sed do eiusmod tempor inc.ipsum dolor sit amet.aonsecteur adipisicing eltl.
+			</div>
+		</div>
+
+		<div class="home-implicit-product" style="float: right;">
+			<a style="float: left;width: 100%;" href="#">
+				<img class="home-implicit-product-photo" style="width: 100%;" src="imgs/test/cinelli-front.jpeg" alt="product">
+			</a>
+			<a class="home-implicit-product-detail" style="float: left; width: 100%;" href="#">
+				<div style="width: 100%; color: #fff">
+					<h2 style="border-color: #fff">SHAWEISITE</h2>
+					Lorem ipsum dolor sit amet, consectetur adipisicing  elit, sed do eiusmod tempor inc.ipsum dolor sit amet.aonsecteur adipisicing eltl.
+				</div>
+			</a>
+		</div>
+
+		<div class="home-explicit-product ie8-left-arrow" style="float: left;">
+			<a style="float: left;" href="#">
+				<img style="float: left;" src="imgs/test/affinity.jpeg" alt="product">
+			</a>
+			<div style="width: 50%;">
+				<h2>SHAWEISITE</h2>
+				Lorem ipsum dolor sit amet, consectetur adipisicing  elit, sed do eiusmod tempor inc.ipsum dolor sit amet.aonsecteur adipisicing eltl.
+			</div>
+		</div>
+
+		<div class="home-implicit-product" style="float: left;width: 25%;">
+			<a style="float: left;width: 100%;" href="#">
+				<img class="home-implicit-product-photo" style="width: 100%;" src="imgs/test/cinelli-front.jpeg" alt="product">
+			</a>
+			<a class="home-implicit-product-detail" style="float: left; width: 100%;" href="#">
+				<div style="width: 100%; color: #fff">
+					<h2 style="border-color: #fff">SHAWEISITE</h2>
+					Lorem ipsum dolor sit amet, consectetur adipisicing  elit, sed do eiusmod tempor inc.ipsum dolor sit amet.aonsecteur adipisicing eltl.
+				</div>
+			</a>
+		</div>
+
+		<div class="home-implicit-product" style="float: left;width: 25%;">
+			<a style="float: left;width: 100%;" href="#">
+				<img class="home-implicit-product-photo" style="width: 100%;" src="imgs/test/cinelli-front.jpeg" alt="product">
+			</a>
+			<a class="home-implicit-product-detail" style="float: left; width: 100%;" href="#">
+				<div style="width: 100%; color: #fff">
+					<h2 style="border-color: #fff">SHAWEISITE</h2>
+					Lorem ipsum dolor sit amet, consectetur adipisicing  elit, sed do eiusmod tempor inc.ipsum dolor sit amet.aonsecteur adipisicing eltl.
+				</div>
+			</a>
+		</div>
+	</div>
+	<!-- 页脚 -->
+	<div class="home-footer"><!-- 
+		 --><p><i class="iconfont">&#xe626;</i>+86 137 1929 2725</p><!-- 
+		 --><p><i class="iconfont">&#xe60b;</i>sawensitopmade@gmail.com</p><!-- 
+		 --><p><i class="iconfont">&#xe643;</i>+86 137 1929 2725</p><!-- 
+		 --><p><i class="iconfont">&#xf000f;</i>www.facebook.com/yinzhou.lin</p>
+	</div>
+	<script src="js/showImplicitProductDetail.js"></script>
+	<script>
+	  $('#slides').superslides({
+	    animation: 'fade',
+	    inherit_height_from: $('.public-slide')[0]
+	  });
+	  var marginTop = parseInt($('#guide-logo').css('marginTop')) + 120;
+	  $('.slides-pagination').css({"margin-top": marginTop});
+	  var btn = $('.slides-pagination > a');
+	  var prev = $('.home-slide-btn')[0];
+	  var next = $('.home-slide-btn')[1];
+	  var i = 0;	  
+	  prev.onclick = function () {
+	  	// console.log(i)
+	  	if (i == 0) {
+	  		i=2
+	  		btn[i].click()
+	  	} else if (i == 1) {
+	  		btn[--i].click()
+	  	} else if (i == 2) {
+	  		btn[--i].click()
+	  	}
+	  }
+
+	  next.onclick = function () {
+	  	if (i == 0) {
+	  		btn[++i].click()
+	  		// console.log(i)
+	  		return
+	  	}
+	  	if (i == 1) {
+	  		btn[++i].click()
+	  		// console.log(i)
+	  		return
+	  	}
+	  	if (i == 2) {
+	  		i = 0
+	  		btn[i].click()
+	  		// console.log(i)
+	  		return
+	  	}
+	  }
+
+	  setInterval(function () {
+	  	next.click()
+	  },3000)
+
+	  var walk_the_DOM = function walk(node, func) {
+	  	func(node)
+	  	node = node.firstChild
+	  	while(node) {
+	  		walk(node, func)
+	  		node = node.nextSibling
+	  	}
+	  }
+
+	  var getElementsByAttribute = function (att, value) {
+	  	var result = []
+
+	  	walk_the_DOM(document.body, function (node) {
+	  		var actual = node.nodeType === 1 && node.getAttribute(att)
+	  		if (typeof actual === 'string' && (actual === value || typeof value !== 'string')) {
+	  			result.push(node)
+	  		}
+	  	})
+
+	  	return result
+	  }
+
+	  var iconfont = getElementsByAttribute('class', 'iconfont')
+
+	  console.log(iconfont)
+	</script>
+</body>
+</html>
